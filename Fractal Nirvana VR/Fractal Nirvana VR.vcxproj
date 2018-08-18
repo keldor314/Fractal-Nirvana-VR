@@ -106,6 +106,7 @@ xcopy /y /d "$(USERPROFILE)\source\repos\openvr\bin\win64\openvr_api.dll" "$(Tar
   <ItemGroup>
     <ClCompile Include="Engine.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Utils.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Engine.h" />
@@ -115,6 +116,9 @@ xcopy /y /d "$(USERPROFILE)\source\repos\openvr\bin\win64\openvr_api.dll" "$(Tar
     <ProjectReference Include="..\Parsers\Parsers.fsproj">
       <Project>{5d3da2f0-7143-4adc-90d0-273fe772ea42}</Project>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

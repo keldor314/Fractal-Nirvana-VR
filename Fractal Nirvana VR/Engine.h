@@ -1,6 +1,7 @@
 #pragma once
 
 #include <openvr.h>
+#include <SDL_syswm.h>
 
 class Engine
 {
@@ -10,6 +11,10 @@ public:
 	~Engine();
 
 private:
-	vr::IVRSystem *m_pHMD;
+	vr::IVRSystem *HMD;
+	vr::IVRRenderModels *RenderModels;
+	SDL_Window *CompanionWindow;
+	int CompanionWindowWidth;
+	int CompanionWindowHeight;
 };
 
