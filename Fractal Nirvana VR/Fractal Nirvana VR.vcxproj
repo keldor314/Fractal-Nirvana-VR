@@ -119,6 +119,7 @@ xcopy /y /d "$(USERPROFILE)\source\repos\openvr\bin\win64\openvr_api.dll" "$(Tar
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Windows.Forms" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
