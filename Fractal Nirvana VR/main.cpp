@@ -19,5 +19,7 @@ int main(int argc, char *argv[])
 	CommandLine::Parse(arguments);
 	Engine *engine = new Engine();
 	engine->Init();
+
+	delete engine;
 	return 0;
 }
